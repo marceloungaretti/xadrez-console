@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace xadrez_console.tabuleiro
+namespace tabuleiro
 {
     public enum Cor
     {
