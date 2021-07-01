@@ -3,7 +3,7 @@
 
 namespace xadrez_console.tabuleiro
 {
-    enum Cor
+    public enum Cor
     {
         Branca,
         Preta,
