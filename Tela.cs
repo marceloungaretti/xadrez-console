@@ -29,6 +29,7 @@ namespace xadrez_console
                 Console.WriteLine("Vencedor: " + partida.jogadorAtual);
             }
         }
+
         public static void imprimirPecasCapturadas(PartidaDeXadrez partida)
             {
                 Console.WriteLine("Peças capturadas: ");
@@ -68,9 +69,6 @@ namespace xadrez_console
                 Console.WriteLine("  a  b  c  d  e  f  g  h");
             }
 
-
-
-
             public static void imprimirTabuleiro(Tabuleiro tab, bool[,] posicoesPossiveis)
             {
                 ConsoleColor fundoOriginal = Console.BackgroundColor;
@@ -99,11 +97,6 @@ namespace xadrez_console
                 Console.BackgroundColor = fundoOriginal;
             }
 
-
-
-
-
-
             public static PosicaoXadrez lerPosicaoXadrez()
             {
                 string s = Console.ReadLine();
@@ -111,9 +104,6 @@ namespace xadrez_console
                 int linha = int.Parse(s[1] + " ");
                 return new PosicaoXadrez(coluna, linha);
             }
-
-
-
 
             public static void imprimirPeca(Peca peca)
             {
@@ -137,9 +127,5 @@ namespace xadrez_console
                     Console.Write(" ");
                 }
             }
-
-
-
-
         }
     }

@@ -1,7 +1,4 @@
-﻿using System;
-using tabuleiro;
-
-namespace tabuleiro
+﻿namespace tabuleiro
 {
     public class Tabuleiro
     {
@@ -71,13 +68,5 @@ namespace tabuleiro
                 throw new TabuleiroException("Posição Inválida! ");
             }
         }
-
-
-
-
-
-
-
-
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using tabuleiro;
+﻿using tabuleiro;
 
 namespace xadrez
 {
@@ -117,12 +116,7 @@ namespace xadrez
                     }
                 }
             }
-
             return mat;
-
         }
-
-
-
     }
 }

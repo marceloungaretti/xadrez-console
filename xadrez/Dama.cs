@@ -2,7 +2,6 @@
 
 namespace xadrez
 {
-
     class Dama : Peca
     {
 

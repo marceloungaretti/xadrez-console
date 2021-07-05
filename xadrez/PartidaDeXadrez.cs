@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using tabuleiro;
 
-
 namespace xadrez
 {
     class PartidaDeXadrez
@@ -76,8 +75,6 @@ namespace xadrez
                     capturadas.Add(pecaCapturada);
                 }
             }
-
-
             return pecaCapturada;
         }
 
@@ -130,11 +127,8 @@ namespace xadrez
                     tab.colocarPeca(peao, posP);
                 }
             }
-
-
-
-
         }
+
         public void realizaJogada(Posicao origem, Posicao destino)
         {
             Peca pecaCapturada = executaMovimento(origem, destino);
@@ -158,13 +152,7 @@ namespace xadrez
                     tab.colocarPeca(dama, destino);
                     pecas.Add(dama);
                 }
-
-
             }
-
-
-
-
 
             if (estaEmXeque(adversaria(jogadorAtual)))
             {
@@ -185,8 +173,6 @@ namespace xadrez
                 mudaJogador();
             }
 
-
-
             //#jogadaespecial en passant
             if (p is Peao && (destino.linha == origem.linha - 2 || destino.linha == origem.linha + 2))
             {
@@ -196,18 +182,6 @@ namespace xadrez
             {
                 vulneravelEnPassant = null;
             }
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
 
@@ -390,27 +364,6 @@ namespace xadrez
             colocarNovaPeca('f', 7, new Peao(tab, Cor.Preta, this));
             colocarNovaPeca('g', 7, new Peao(tab, Cor.Preta, this));
             colocarNovaPeca('h', 7, new Peao(tab, Cor.Preta, this));
-
-
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }

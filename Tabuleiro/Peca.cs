@@ -1,7 +1,4 @@
-﻿using System;
-
-
-namespace tabuleiro
+﻿namespace tabuleiro
 {
     public abstract class Peca
     {

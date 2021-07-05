@@ -1,7 +1,4 @@
-﻿using System;
-
-
-namespace tabuleiro
+﻿namespace tabuleiro
 {
     public enum Cor
     {
